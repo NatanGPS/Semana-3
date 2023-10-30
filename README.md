@@ -21,7 +21,7 @@
 
 
         sudo chmod +x minikube
-        sudo mv minikube
+        sudo mv minikube /usr/local/bin/
 <br> Podemos então conferir se instalação deu certo usando
 
         minukube --help
