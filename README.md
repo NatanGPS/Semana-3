@@ -13,4 +13,16 @@
 <br> Tudo pronto, para verificar se tudo correu bem podemos digitar o comando abaixo para ver se tudo foi instalado corretamente
 
     kubectl --help
-<br> Caso uma pagina de ajuda se abra significa que a instalação ocorreu corretamente
+<br> Caso uma pagina de ajuda se abra significa que a instalação ocorreu corretamente, mas ainda não acabou, porque ainda precisamos instalar o minikube para isso podemos utilizar um metodo parecido com a instalação do nosso kubectl, segue abaixo o comando que utilizaremos
+
+        sudo curl -Lo minikube https://github.com/kubernetes/minikube/releases/download/v0.28.0/minikube-linux-amd64
+
+<br> A partir de agora podemos assim como fizemos com o kubectl, ceder permissão ao nosso arquivo e move-lo para nosso diretorio incluso no PATH, dessa forma poderemos digitar seu comando de qualquer lugar que estivermos dentro da nossa VM 
+
+
+        sudo chmod +x minikube
+        sudo mv minikube
+<br> Podemos então conferir se instalação deu certo usando
+
+        minukube --help
+        
